@@ -16,7 +16,7 @@
 
 body {
   background-color: hsl(0, 0%, 95%);
-  height: 75vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -24,7 +24,6 @@ body {
 }
 .card {
   max-width: 65%;
-  min-height: 65%;
   display: flex;
 }
 
