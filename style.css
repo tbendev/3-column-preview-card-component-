@@ -16,7 +16,7 @@
 
 body {
   background-color: hsl(0, 0%, 95%);
-  height: 100vh;
+  height: 75vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -52,7 +52,6 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
-  line-height: 4rem;
   color: hsl(0, 0%, 95%);
 }
 .card__element-content {
