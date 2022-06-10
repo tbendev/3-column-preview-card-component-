@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.card {
+  max-width: 65%;
+  min-height: 65%;
+  display: flex;
+}
+
+.card__element {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 15px;
+}
+
+.card__element:nth-child(1) {
+  background-color: hsl(31, 77%, 52%);
+}
+.card__element:nth-child(2) {
+  background-color: hsl(184, 100%, 22%);
+}
+.card__element:nth-child(3) {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.card__element-title {
+  font-size: x-large;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 4rem;
+  color: hsl(0, 0%, 95%);
+}
+.card__element-content {
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+  text-align: left;
+  padding-bottom: 55px;
+  font-weight: 400;
+}
+.card__element-button a {
+  text-decoration: none;
+  display: flex;
+  border-radius: 20px;
+  align-items: center;
+  width: fit-content;
+  padding: 5px 20px 5px 20px;
+  background-color: hsl(0, 0%, 95%);
+  color: black;
+  mix-blend-mode: screen;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
+}
+.card__element-button a:hover {
+  color: hsl(0, 0%, 95%);
+  border: solid hsl(0, 0%, 95%);
+  background-color: transparent;
+  mix-blend-mode: screen;
+}
+
+@media screen and (max-width: 750px) {
+  body {
+  }
+  .card {
+    flex-direction: column;
+    height: 870;
+  }
+  .card__element-title {
+    line-height: 2rem;
+    padding-bottom: 5px;
+  }
+  .card__element {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 10px 30px 10px 30px;
+  }
+  .card__element-content {
+    padding-bottom: 15px;
+  }
+}
